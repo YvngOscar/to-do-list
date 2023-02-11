@@ -33,6 +33,13 @@ addTask.addEventListener('click', function(){
     });
     deleteBtn.addEventListener('click', function(e){
       let target = e.target;
-      target.parentElement.parentElement.remove();
+
+      if(e.target.classList.contains('fa-trash')){
+        target.parentElement.parentElement.remove();
+        return;
+      }
+
+      target.parentElement.remove()
+      console.log(target.parentElement.parentElement);
     });
 });

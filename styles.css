@@ -50,6 +50,7 @@ button:hover{
   justify-content: space-between;
 }
 li{
+  list-style: none;
   flex: 4;
   padding: 5px;
   font-size: 1.3rem;
